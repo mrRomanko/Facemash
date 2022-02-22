@@ -13,7 +13,8 @@ If you want to use these codes or other information in this pack. DO NOT use it 
 
 Upload the `base.sql` file to phpMyAdmin, or the code below:
 
-```CREATE TABLE `photos` (
+```sql
+CREATE TABLE `photos` (
   `id` int(11) NOT NULL,
   `token` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -28,6 +29,14 @@ COMMIT;```
 
 Modify `init.php` according to your environment. Here I am using MySQLi!
 
+```php
+$host = 'localhost'; // Ім'я хоста
+$db_username = 'root'; // Ім'я користувача бази даних
+$db_password = ''; // Пароль бази даних
+$db_name = 'facemash'; // Ім'я бази даних
+$mysqli = new mysqli($host, $db_username, $db_password, $db_name);
+```
+
 ## Українська
 Facemash — це веб-сайт, створений Марком Цукербергом у 2003 році, де люди мали вибирати між двома фотографіями. Це клон Facemash у фільмі "The Social Network".
 
@@ -41,7 +50,8 @@ Facemash — це веб-сайт, створений Марком Цукерб�
 
 Завантажте у phpMyAdmin файл `base.sql`, або код нижче:
 
-```CREATE TABLE `photos` (
+```sql
+CREATE TABLE `photos` (
   `id` int(11) NOT NULL,
   `token` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -55,3 +65,11 @@ ALTER TABLE `photos`
 COMMIT;```
 
 Змініть `init.php` відповідно до вашого середовища. Тут я використовую MySQLi!
+
+```php
+$host = 'localhost'; // Ім'я хоста
+$db_username = 'root'; // Ім'я користувача бази даних
+$db_password = ''; // Пароль бази даних
+$db_name = 'facemash'; // Ім'я бази даних
+$mysqli = new mysqli($host, $db_username, $db_password, $db_name);
+```
