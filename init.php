@@ -1,8 +1,7 @@
 <?php
 
-
-$host = 'localhost'; // Put here your host
-$db_username = 'ramzesy8_top'; // Put here your database username
-$db_password = 'lBNXkm&6'; // Put here your database password
-$db_name = 'ramzesy8_top'; // Put here your database name
+$host = 'localhost'; // Ім'я хоста
+$db_username = 'root'; // Ім'я користувача бази даних
+$db_password = ''; // Пароль бази даних
+$db_name = 'facemash'; // Ім'я бази даних
 $mysqli = new mysqli($host, $db_username, $db_password, $db_name);
