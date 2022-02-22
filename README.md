@@ -25,7 +25,8 @@ ALTER TABLE `photos`
   ADD PRIMARY KEY (`id`);
 ALTER TABLE `photos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;```
+COMMIT;
+```
 
 Modify `init.php` according to your environment. Here I am using MySQLi!
 
@@ -62,7 +63,8 @@ ALTER TABLE `photos`
   ADD PRIMARY KEY (`id`);
 ALTER TABLE `photos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;```
+COMMIT;
+```
 
 Змініть `init.php` відповідно до вашого середовища. Тут я використовую MySQLi!
 
